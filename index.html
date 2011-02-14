@@ -8,16 +8,8 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <!-- encoding must be specified within the first 512 bytes www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
-
-  <!-- meta element for compatibility mode needs to be before all elements except title & meta msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx --> 
-  <!-- Chrome Frame is only invoked if meta element for compatibility mode is within the first 1K bytes code.google.com/p/chromium/issues/detail?id=23003 -->    
-
-
+ 
   <title></title>
   <meta name="description" content="">
   <meta name="author" content="">
@@ -43,12 +35,82 @@
 
 <body>
 
-  <div id="container">
+  <div>
     <header>
 
     </header>
     
     <div id="main" role="main">
+		<h1>UM-Flint Foursquare Stalker Utility</h1>
+		<ul id="venues">
+		    <li>
+		        <a href="#" data-venue="1566615">
+				UM-Flint Murchie Science Building (MSB)</a>
+				<div class="result"></div>
+		    </li>
+			<li>
+		        <a href="#" data-venue="789591">UM-Flint William S. White Building (WSW)</a>
+				<div class="result"></div>
+		    </li>
+			<li>
+			    <a href="#" data-venue="778615">UM-Flint University Pavilion (UPAV)</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="1020310">UM-Flint David M. French Hall (FH)</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="621913">UM-Flint Library (FWTL)</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="2809815">UM-Flint Northbank Center</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="2737659">UM-Flint First Street Residence Hall</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="234981">UM-Flint Recreation Center</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="12358225">UM-Flint Hubbard Building</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="15084672">UM-Flint Barnes &amp; Noble Bookstore</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="1683700">UM-Flint University Center (UCEN)</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="11102028">UM-Flint Theatre</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="14142082">UM-Flint Student Organization Center (213 UCEN)</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="16196397">UM-Flint at St. Clair County Community College</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="16196354">UM-Flint at Lansing Community College</a>
+				<div class="result"></div>
+			</li>
+			<li>
+			    <a href="#" data-venue="16196475">UM-Flint at Wayne County Community College District</a>
+				<div class="result"></div>
+			</li>
+		
+		</ul>
+	
     </div>
     
     <footer>
@@ -60,12 +122,11 @@
   <!-- Javascript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))</script>
   
   
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
   <!-- end concatenated and minified scripts-->
   
