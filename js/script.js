@@ -17,7 +17,6 @@ function fsq(venue, callback){
 	function cbFunc(data){
 		if(!data.query.results.venue.stats.mayor){
 			alert('No Data sorry');
-			return false;
 		}	
 		if (typeof callback === 'function'){
 			callback (
@@ -37,20 +36,15 @@ $(document).ready(function() {
 		var path = $(this).attr('data-venue');
 		var result = $(this).next('div');
 		
-		// check to see if the trough is in the pen or not
 		if(result.is(":hidden")){
 		 fsq(path, function(results){
-					// check to see if this pig is empty
 					if(result.is(":empty")){
-						// Fill it with jSON slop YUM!
 						result.append(results);
 					}
 		});
-			// slide in the trough into the pen
 			result.delay(100).slideDown();
 	 	}else
 		{
-			// otherwise take the trough away
 			result.slideUp();
 		}
 	});
