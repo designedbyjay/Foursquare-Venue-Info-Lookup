@@ -197,13 +197,20 @@ button {  width: auto; overflow: visible; }
  /* Primary Styles
     Author:
  */
-
+body{background:#fff;}
+#main{background:#f9f9f9; width:500px; margin:0 auto; padding:30px;margin-top:30px; -webkit-border-radius:5px; border:1px solid #e3e3e3;}
+.title{text-align:center;}
+li{list-style:none;}
+a, a:link, a:visited{color:#2398C9; font-weight:bold; font-size:16px; text-decoration:none;}
 h1{font-size:24px; margin-bottom:20px;}
 .mayor .img {margin:0 10px 0 0;}
-.mayor .count {font-size:24px;}
+.count {font-size:24px;}
 .mayor .label{font-size:12px;}
-.result{display:none;}
+.result{display:none; background:#fff; padding:10px; border:1px solid #e3e3e3; -webkit-box-shadow:0 1px 0px #fff;}
+strong{color:#999; margin-bottom:10px; display:block;}
+ul li ul{margin:0;}
 
+#venues{margin:0;}
 #venues li{margin-bottom:10px;}
 
 
